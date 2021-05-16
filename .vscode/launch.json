@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "crmsystem/host/app_host.py",
+                "FLASK_ENV": "development",
+                "FLASK_DEBUG": "0",
+                "CUSTOMER_SERVICE_URL": "https://60a1523dd2855b00173b1f7e.mockapi.io/customers",
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "CUSTOMER_SERVICE_URL": "https://60a1523dd2855b00173b1f7e.mockapi.io/customers",
+                "FLASK_DEBUG": "1",
+                "FLASK_APP": "crmsystem/host/app_host.py",
+                "FLASK_ENV": "development"
+            }
+        }
+    ]
+}
