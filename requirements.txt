@@ -1,5 +1,3 @@
 requests
 Flask
-Flask
-pymongo
 flask-cors
